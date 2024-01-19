@@ -1,0 +1,140 @@
+body{
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  /* margin-right: auto; */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #c0c0c0;
+  color: #fff;
+  border: 1px solid #333;
+  margin-left: 390px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: black;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: black;
+  font-size: 20px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+ color: black;
+}
+
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #9c9c9c;
+  color: black;
+  width: 95%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(24, 23, 23, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus,
+.form label .input:valid {
+  color: black;
+  top: 0px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+  text-decoration: none;
+  width: 100%;
+  
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+.btn{
+  background-color: lightgray;
+  background-size: cover;
+}
+.ok{
+  all: unset;
+}
